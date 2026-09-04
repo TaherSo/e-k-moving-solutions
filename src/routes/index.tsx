@@ -95,15 +95,12 @@ function HomePage() {
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
-          <a href="#" className="flex items-center gap-3">
+          <a href="#" className="flex items-center">
             <img
               src={logoAsset.url}
               alt="E&K Umzug · Transport · Entrümpelung Logo"
-              className="h-12 w-12 rounded-md object-contain"
+              className="h-14 w-auto rounded-md object-contain"
             />
-            <span className="font-display text-2xl font-bold tracking-wide">
-              E<span className="text-brand">&</span>K
-            </span>
           </a>
           <nav className="hidden items-center gap-6 text-sm font-semibold md:flex">
             <a href="#leistungen" className="hover:text-brand-red">
