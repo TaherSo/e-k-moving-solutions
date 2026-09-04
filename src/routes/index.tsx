@@ -16,6 +16,7 @@ import {
   Clock,
   Wallet,
   CalendarCheck,
+  Globe,
   Menu,
   X,
 } from "lucide-react";
