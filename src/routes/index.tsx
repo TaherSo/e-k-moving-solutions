@@ -102,7 +102,7 @@ function HomePage() {
               className="h-12 w-12 rounded-md object-contain"
             />
             <span className="font-display text-2xl font-bold tracking-wide">
-              E<span className="text-brand-red">&</span>K
+              E<span className="text-brand">&</span>K
             </span>
           </a>
           <nav className="hidden items-center gap-6 text-sm font-semibold md:flex">
