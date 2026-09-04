@@ -197,7 +197,7 @@ function HomePage() {
           <div className="flex justify-center">
             <img
               src={logoAsset.url}
-              alt="E&K Logo mit Kölner Dom und Umzugshelfer"
+              alt="E&K Logo mit Transporter und Umzugshelfer"
               className="w-full max-w-md rounded-2xl shadow-2xl"
             />
           </div>
