@@ -26,6 +26,8 @@ import logoAsset from "@/assets/ek-logo.png.asset.json";
 const PHONE_DISPLAY = "0151 290 43 558";
 const PHONE_TEL = "tel:+4915129043558";
 const WHATSAPP = "https://wa.me/4915129043558";
+const EMAIL = "info@eundktransport.de";
+const WEBSITE = "www.eundktransport.de";
 
 const services = [
   { icon: Home, title: "Umzüge privat & gewerblich" },
@@ -75,8 +77,9 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "MovingCompany",
-          name: "E&K Umzug & Transportzentrum",
-          url: "https://ek-umzug.de",
+          name: "E&K Umzugs-, Transport- und Dienstleistungsservice",
+          url: "https://www.eundktransport.de",
+          email: "info@eundktransport.de",
           telephone: "+49 151 290 43 558",
           slogan: "Schnell. Preiswert. Zuverlässig. Termintreu.",
           areaServed: "Deutschland",
@@ -112,6 +115,12 @@ function HomePage() {
             <a href="#kontakt" className="hover:text-brand-red">
               Kontakt
             </a>
+            <a href="/impressum" className="hover:text-brand-red">
+              Impressum
+            </a>
+            <a href="/datenschutz" className="hover:text-brand-red">
+              Datenschutz
+            </a>
             <a
               href={PHONE_TEL}
               className="inline-flex items-center gap-2 rounded-md bg-brand px-4 py-2 font-display text-lg font-bold tracking-wide text-brand-foreground transition-transform hover:scale-105"
@@ -138,6 +147,12 @@ function HomePage() {
             </a>
             <a href="#kontakt" onClick={() => setMenuOpen(false)}>
               Kontakt
+            </a>
+            <a href="/impressum" onClick={() => setMenuOpen(false)}>
+              Impressum
+            </a>
+            <a href="/datenschutz" onClick={() => setMenuOpen(false)}>
+              Datenschutz
             </a>
             <a href={PHONE_TEL} className="font-bold text-brand-red">
               ☎ {PHONE_DISPLAY}
@@ -284,7 +299,14 @@ function HomePage() {
           </div>
           <p className="mt-6 inline-flex items-center gap-2 text-lg font-semibold text-primary-foreground/80">
             <Globe className="h-5 w-5" />
-            ek-umzug.de
+            <a
+              href={`https://${WEBSITE}`}
+              className="hover:text-brand"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {WEBSITE}
+            </a>
           </p>
         </div>
       </section>
@@ -299,15 +321,31 @@ function HomePage() {
               className="h-10 w-10 rounded-md object-contain"
             />
             <span>
-              E&K Umzug & Transportzentrum · Umzug · Transport · Entrümpelung
+              E&K Umzugs-, Transport- und Dienstleistungsservice · Umzug ·
+              Transport · Entrümpelung
             </span>
           </div>
-          <div className="flex items-center gap-4">
-            <a href={PHONE_TEL} className="hover:text-brand">
-              {PHONE_DISPLAY}
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <a href={`mailto:${EMAIL}`} className="hover:text-brand">
+              {EMAIL}
             </a>
             <span>·</span>
-            <span>ek-umzug.de</span>
+            <a
+              href={`https://${WEBSITE}`}
+              className="hover:text-brand"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {WEBSITE}
+            </a>
+            <span>·</span>
+            <a href="/impressum" className="hover:text-brand">
+              Impressum
+            </a>
+            <span>·</span>
+            <a href="/datenschutz" className="hover:text-brand">
+              Datenschutz
+            </a>
           </div>
         </div>
       </footer>
