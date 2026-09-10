@@ -313,15 +313,31 @@ function HomePage() {
               className="h-10 w-10 rounded-md object-contain"
             />
             <span>
-              E&K Umzug & Transportzentrum · Umzug · Transport · Entrümpelung
+              E&K Umzugs-, Transport- und Dienstleistungsservice · Umzug ·
+              Transport · Entrümpelung
             </span>
           </div>
-          <div className="flex items-center gap-4">
-            <a href={PHONE_TEL} className="hover:text-brand">
-              {PHONE_DISPLAY}
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <a href={`mailto:${EMAIL}`} className="hover:text-brand">
+              {EMAIL}
             </a>
             <span>·</span>
-            <span>ek-umzug.de</span>
+            <a
+              href={`https://${WEBSITE}`}
+              className="hover:text-brand"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {WEBSITE}
+            </a>
+            <span>·</span>
+            <a href="/impressum" className="hover:text-brand">
+              Impressum
+            </a>
+            <span>·</span>
+            <a href="/datenschutz" className="hover:text-brand">
+              Datenschutz
+            </a>
           </div>
         </div>
       </footer>
