@@ -26,6 +26,8 @@ import logoAsset from "@/assets/ek-logo.png.asset.json";
 const PHONE_DISPLAY = "0151 290 43 558";
 const PHONE_TEL = "tel:+4915129043558";
 const WHATSAPP = "https://wa.me/4915129043558";
+const EMAIL = "info@eundktransport.de";
+const WEBSITE = "www.eundktransport.de";
 
 const services = [
   { icon: Home, title: "Umzüge privat & gewerblich" },
