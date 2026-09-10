@@ -114,6 +114,12 @@ function HomePage() {
             <a href="#kontakt" className="hover:text-brand-red">
               Kontakt
             </a>
+            <a href="/impressum" className="hover:text-brand-red">
+              Impressum
+            </a>
+            <a href="/datenschutz" className="hover:text-brand-red">
+              Datenschutz
+            </a>
             <a
               href={PHONE_TEL}
               className="inline-flex items-center gap-2 rounded-md bg-brand px-4 py-2 font-display text-lg font-bold tracking-wide text-brand-foreground transition-transform hover:scale-105"
