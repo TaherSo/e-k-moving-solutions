@@ -21,7 +21,7 @@ import {
   X,
 } from "lucide-react";
 import { useState } from "react";
-import logoAsset from "@/assets/ek-logo.png.asset.json";
+
 
 const PHONE_DISPLAY = "0151 290 43 558";
 const PHONE_TEL = "tel:+4915129043558";
@@ -100,7 +100,7 @@ function HomePage() {
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
           <a href="#" className="flex items-center">
             <img
-              src={logoAsset.url}
+              src={"/ek-logo-official-one-banner.png"}
               alt="E&K Umzug · Transport · Entrümpelung Logo"
               className="h-14 w-auto rounded-md object-contain"
             />
@@ -208,7 +208,7 @@ function HomePage() {
           </div>
           <div className="flex justify-center">
             <img
-              src={logoAsset.url}
+              src={"/ek-logo-official-one-banner.png"}
               alt="E&K Logo mit Transporter und Umzugshelfer"
               className="w-full max-w-md rounded-2xl shadow-2xl"
             />
@@ -316,7 +316,7 @@ function HomePage() {
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-8 text-sm md:flex-row">
           <div className="flex items-center gap-3">
             <img
-              src={logoAsset.url}
+              src={"/ek-logo-official-one-banner.png"}
               alt="E&K Logo"
               className="h-10 w-10 rounded-md object-contain"
             />
