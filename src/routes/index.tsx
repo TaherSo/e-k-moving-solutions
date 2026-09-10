@@ -147,6 +147,12 @@ function HomePage() {
             <a href="#kontakt" onClick={() => setMenuOpen(false)}>
               Kontakt
             </a>
+            <a href="/impressum" onClick={() => setMenuOpen(false)}>
+              Impressum
+            </a>
+            <a href="/datenschutz" onClick={() => setMenuOpen(false)}>
+              Datenschutz
+            </a>
             <a href={PHONE_TEL} className="font-bold text-brand-red">
               ☎ {PHONE_DISPLAY}
             </a>
