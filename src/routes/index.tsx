@@ -77,8 +77,9 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "MovingCompany",
-          name: "E&K Umzug & Transportzentrum",
-          url: "https://ek-umzug.de",
+          name: "E&K Umzugs-, Transport- und Dienstleistungsservice",
+          url: "https://www.eundktransport.de",
+          email: "info@eundktransport.de",
           telephone: "+49 151 290 43 558",
           slogan: "Schnell. Preiswert. Zuverlässig. Termintreu.",
           areaServed: "Deutschland",
