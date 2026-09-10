@@ -298,7 +298,14 @@ function HomePage() {
           </div>
           <p className="mt-6 inline-flex items-center gap-2 text-lg font-semibold text-primary-foreground/80">
             <Globe className="h-5 w-5" />
-            ek-umzug.de
+            <a
+              href={`https://${WEBSITE}`}
+              className="hover:text-brand"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {WEBSITE}
+            </a>
           </p>
         </div>
       </section>
