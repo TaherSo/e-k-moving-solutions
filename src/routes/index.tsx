@@ -240,7 +240,7 @@ function HomePage() {
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground">
           Vom privaten Umzug bis zur gewerblichen Haushaltsauflösung – E&K ist
-          Ihr Transportzentrum für Köln und ganz Deutschland.
+          Ihr Transportzentrum für Hamburg und ganz Deutschland.
         </p>
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s) => (
